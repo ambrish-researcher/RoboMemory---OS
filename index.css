@@ -1,0 +1,57 @@
+:root {
+  --bg-base: #080B12;
+  --bg-surface: #0F1420;
+  --bg-elevated: #1A2035;
+  --accent-primary: #00D4FF;
+  --accent-secondary: #7C6AF7;
+  --accent-warm: #F5A623;
+  --accent-green: #3DD68C;
+  --accent-red: #FF4444;
+  --accent-coral: #FF6B6B;
+  --text-primary: #E8EAF0;
+  --text-secondary: #8B92A8;
+  --text-muted: #4A5068;
+  --border: #1E2640;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.4); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px var(--accent-primary); }
+  50% { box-shadow: 0 0 25px var(--accent-primary); }
+}
+
+@keyframes roboGlow {
+  0%, 100% { text-shadow: 0 0 5px var(--accent-primary); }
+  50% { text-shadow: 0 0 20px var(--accent-primary); }
+}
